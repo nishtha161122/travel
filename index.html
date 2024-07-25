@@ -3,46 +3,195 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nomad Nirvana</title>
+    <title>Travel</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
-      <h1>Nomad Nirvana</h1>
-      <p>Your Ultimate Guide to Traveling Across India</p>
-    </header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#states">States</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </nav>
-    <div class="content" id="home">
-      <h2>Welcome to Nomad Nirvana</h2>
-      <p>
-        Explore the diverse and vibrant landscapes of India. From majestic
-        mountains to serene beaches, discover your next travel destination.
-      </p>
-    </div>
-    <div class="content" id="states">
-      <h2>States</h2>
-      <div class="state"></div>
-      <!-- Add more states as needed -->
-    </div>
-    <div class="content" id="contact">
-      <h2>Contact Us</h2>
-      <p>For inquiries, please email us at info@nomadnirvana.com</p>
-    </div>
-    <div class="content" id="about">
-      <h2>About Nomad Nirvana</h2>
-      <p>
-        Nomad Nirvana is dedicated to providing comprehensive travel guides for
-        every state in India. Our mission is to make your travel planning
-        seamless and enjoyable.
-      </p>
-    </div>
-    <div class="footer">
-      <p>&copy; 2024 Nomad Nirvana. All rights reserved.</p>
-    </div>
+    <section id="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img
+            class="logo"
+            src="./Untitled_logo_1_free-file-removebg-preview.png"
+            alt="Bootstrap"
+          />
+          Travel
+        </a>
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navi collapse navbar-collapse justify-content-end"
+          id="navbarTogglerDemo02"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link no-hover" href="#Home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link no-hover" href="#About-Us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link no-hover" href="#Themes">Themes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link no-hover" href="#Rules">Rules</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link no-hover" href="#Registration">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link no-hover" href="#faqs">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section id="Header">
+      <div class="home-page-heading">
+        <h1 class="heading">Welcome To Nirvana</h1>
+      </div>
+      <div class="home-page-header">
+        <div class="icon-container">
+          <a class="plane" href=""
+            ><img class="fa-plane" src="./plane.png" alt="" />
+            <span>Plane</span>
+          </a>
+        </div>
+
+        <div class="icon-container">
+          <a class="hotel" href=""
+            ><img class="fa-hotel" src="./hotel.png" alt="" />
+            <span>Hotel</span></a
+          >
+        </div>
+
+        <div class="icon-container">
+          <a class="train" href="">
+            <img class="fa-train" src="./train.png" alt="" />
+            <span>Train</span>
+          </a>
+        </div>
+
+        <div class="icon-container">
+          <a class="bus" href=""
+            ><img class="fa-bus" src="./school-bus.png" alt="" />
+            <span>Bus</span></a
+          >
+        </div>
+
+        <div class="icon-container">
+          <a class="taxi" href=""
+            ><img class="fa-taxi" src="./taxi.png" alt="" />
+            <span>Taxi</span></a
+          >
+        </div>
+      </div>
+      <div class="explore-more">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <a href="#Destinations" class="explore-button">Explore More</a>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </div>
+    </section>
+
+    <section id="Trending-Destinations">
+      <div class="collections">
+        <h1 class="trending-destinations-heading">
+          Handpicked Collections for You
+        </h1>
+
+        <div class="cards-collections">
+          <article class="card">
+            <img
+              class="card__background"
+              src="./download.jpeg"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Colombia</h2>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                  labore laudantium deserunt fugiat numquam.
+                </p>
+              </div>
+              <button class="card__button">Read more</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="Trending-Destinations">
+      <div class="collections">
+        <h1 class="trending-destinations-heading">
+          Handpicked Collections for You
+        </h1>
+
+        <div class="cards-collections">
+          <article class="card">
+            <img
+              class="card__background"
+              src="https://i.imgur.com/QYWAcXk.jpeg"
+              alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+              width="1920"
+              height="2193"
+            />
+            <div class="card__content | flow">
+              <div class="card__content--container | flow">
+                <h2 class="card__title">Colombia</h2>
+                <p class="card__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                  labore laudantium deserunt fugiat numquam.
+                </p>
+              </div>
+              <button class="card__button">Read more</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
